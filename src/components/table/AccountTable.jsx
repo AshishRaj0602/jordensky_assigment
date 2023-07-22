@@ -33,6 +33,7 @@ const AccountTable = () => {
     <div>
       <h1>Table List</h1>
       <table>
+        <thead>
         <tr>
         <th>ACCOUNT</th>
         <th>PREVIOUS TOTAL</th>
@@ -40,7 +41,10 @@ const AccountTable = () => {
         <th>CHILDREN PREVIOUS TOTAL</th>
         <th>CHILDREN TOTAL</th>
         </tr>
+        </thead>
+        <tbody>
         {renderNestedList(data)}
+        </tbody>
       </table>
     </div>
   );
